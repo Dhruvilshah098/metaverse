@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metaverse Project</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- =================================== -->
+    <!--  GLOBAL FLOATING ELEMENTS           -->
+    <!-- =================================== -->
+    <div class="floating-elements-container">
+        <!-- Define SVG shapes to reuse -->
+        <svg width="0" height="0">
+            <defs>
+                <clipPath id="hexagon-clip" clipPathUnits="objectBoundingBox">
+                    <polygon points="0.5 0, 1 0.25, 1 0.75, 0.5 1, 0 0.75, 0 0.25" />
+                </clipPath>
+            </defs>
+        </svg>
+
+        <div class="element ball ball-1"></div>
+        <div class="element hexagon hex-1"></div>
+        <div class="element ball ball-2"></div>
+        <div class="element hexagon hex-2"></div>
+        <div class="element ball ball-3"></div>
+        <div class="element hexagon hex-3"></div>
+        <div class="element ball ball-4"></div>
+    </div>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <span class="logo-icon">&infin;</span> metaverse
+                </a>
+
+                <!-- Mobile Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Login/Registration Buttons (Centered) -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="btn btn-login" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-register" href="#">Registration</a>
+                        </li>
+                    </ul>
+
+                    <!-- Contact Info (Right) -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item contact-info">
+                            <i class="bi bi-telephone-fill"></i> CALL NOW: 0203 302 0476
+                        </li>
+                        <li class="nav-item contact-info">
+                            <i class="bi bi-telegram"></i> TELEGRAM: @metaverse
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="container text-center">
+            <!-- Animated Heading -->
+            <div class="hero-heading">
+                <h2>THE</h2>
+                <h1>META<span class="hero-logo-icon">&infin;</span>SE</h1>
+                <h3>CAN CHANGE <span class="highlight">SOCIETY</span></h3>
+            </div>
+
+            <!-- Animated Info Cards -->
+            <div class="info-cards-left">
+                <!-- Increased delays to 0s, 5s, 10s -->
+                <div class="info-card" style="--delay: 0s;">
+                    <div class="card-icon"><i class="bi bi-rocket-takeoff-fill"></i></div>
+                    <div class="card-content">
+                        <p>Running days</p>
+                        <div class="value">6113</div>
+                    </div>
+                </div>
+                <div class="info-card" style="--delay: 5s;">
+                    <div class="card-icon"><i class="bi bi-wallet2"></i></div>
+                    <div class="card-content">
+                        <p>Total Investments</p>
+                        <div class="value">$0.00</div>
+                    </div>
+                </div>
+                <div class="info-card" style="--delay: 10s;">
+                    <div class="card-icon"><i class="bi bi-calendar-event"></i></div>
+                    <div class="card-content">
+                        <p>Project Started</p>
+                        <div class="value">Feb 21</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-cards-right">
+                <!-- Staggered delays for the right side -->
+                <div class="info-card" style="--delay: 2.5s;">
+                    <div class="card-icon"><i class="bi bi-people-fill"></i></div>
+                    <div class="card-content">
+                        <p>Online Visitors</p>
+                        <div class="value">94</div>
+                    </div>
+                </div>
+                <div class="info-card" style="--delay: 7.5s;">
+                    <div class="card-icon"><i class="bi bi-box-arrow-up-right"></i></div>
+                    <div class="card-content">
+                        <p>Total Withdrawals</p>
+                        <div class="value">$0.00</div>
+                    </div>
+                </div>
+                <div class="info-card" style="--delay: 12.5s;">
+                    <div class="card-icon"><i class="bi bi-person-check-fill"></i></div>
+                    <div class="card-content">
+                        <p>Visitors online</p>
+                        <div class="value">2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================== -->
+    <!--      FEATURES SECTION               -->
+    <!-- =================================== -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="row text-center">
+
+                <!-- Feature Item 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="bi bi-cloud-arrow-down-fill"></i>
+                        </div>
+                        <h5 class="feature-title mt-3">Best Server</h5>
+                    </div>
+                </div>
+
+                <!-- Feature Item 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="bi bi-tags-fill"></i>
+                        </div>
+                        <h5 class="feature-title mt-3">Low Commission</h5>
+                    </div>
+                </div>
+
+                <!-- Feature Item 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="bi bi-gear-fill"></i>
+                        </div>
+                        <h5 class="feature-title mt-3">100% Secure</h5>
+                    </div>
+                </div>
+
+                <!-- Feature Item 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="bi bi-infinity"></i>
+                        </div>
+                        <h5 class="feature-title mt-3">Real Time Monitoring</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =================================== -->
+    <!--        PLANS SECTION                -->
+    <!-- =================================== -->
+    <section id="plans" class="py-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="section-title text-center mb-5">
+                <h2 class="plans-main-title">
+                    <div>
+                        <div class="title-part-logo">&infin;</div>
+                        <span class="title-part-investment">INVESMENT</span>
+                    </div>
+                    <span class="title-part-plans">PLANS</span>
+                </h2>
+            </div>
+
+
+            <div class="basic-plan-card">
+                <div class="plan-tag">BASIC PLAN</div>
+                <div class="card-main-content">
+                    <h3>0.2%</h3>
+                    <p class="duration">hourly for 96 hours</p>
+                    <div class="investment-details">
+                        <div class="investment-text">
+                            <p class="investment-label">Min - Max Investment</p>
+                            <p class="investment-value">$10.00-$500.00 USD</p>
+                        </div>
+                    </div>
+                    <div class="card-icon-small"><i class="bi bi-file-earmark-text"></i></div>
+                    <p class="footer-text">PRINCIPAL INCLUDED</p>
+                </div>
+            </div>
+
+            <div class="orbital-column">
+                <div class="orbital-container">
+                    <!-- Central Hub -->
+                    <div class="central-hub">
+                        <p>TOTAL</p>
+                        <h4>100M</h4>
+                        <span>SUPPLY</span>
+                    </div>
+                    <!-- Orbits -->
+                    <div class="orbit orbit-1">
+                        <div class="plan-node node-1"><span>Upto</span><strong>0.2%</strong><span>PLAN 1</span>
+                        </div>
+                        <div class="plan-node node-2"><span>Upto</span><strong>0.4%</strong><span>PLAN 2</span>
+                        </div>
+                    </div>
+                    <div class="orbit orbit-2">
+                        <div class="plan-node node-3"><span>Upto</span><strong>2.4%</strong><span>PLAN 3</span>
+                        </div>
+                        <div class="plan-node node-4"><span>Upto</span><strong>4.2%</strong><span>PLAN 4</span>
+                        </div>
+                    </div>
+                    <div class="orbit orbit-3">
+                        <div class="plan-node node-5"><span>Upto</span><strong>6.1%</strong><span>PLAN 5</span>
+                        </div>
+                        <div class="plan-node node-6"><span>Upto</span><strong>8.3%</strong><span>PLAN 6</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Only Plan Cards -->
+                <!-- <div class="mobile-plans-list">
+                    <div class="mobile-plan-card"><strong>PLAN 1:</strong> Upto 0.2% (Min $20.00)</div>
+                    <div class="mobile-plan-card"><strong>PLAN 2:</strong> Upto 0.4% (Min $20.00)</div>
+                    <div class="mobile-plan-card"><strong>PLAN 3:</strong> Upto 2.4% (Min $20.00)</div>
+                    <div class="mobile-plan-card"><strong>PLAN 4:</strong> Upto 4.2% (Min $20.00)</div>
+                    <div class="mobile-plan-card"><strong>PLAN 5:</strong> Upto 6.1% (Min $20.00)</div>
+                    <div class="mobile-plan-card"><strong>PLAN 6:</strong> Upto 8.3% (Min $20.00)</div>
+                </div> -->
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- =================================== -->
+    <!--        ABOUT SECTION                -->
+    <!-- =================================== -->
+    <section id="about" class="py-5">
+        <!-- Decorative background elements -->
+        <div class="planet-bg"></div>
+        <div class="sphere-bg sphere-1"></div>
+        <div class="sphere-bg sphere-2"></div>
+
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Column (Certificate and Reg Card) -->
+                <div class="col-lg-6 text-center text-lg-end mb-5 mb-lg-0">
+                    <img src="assets/images/certificate.png" alt="Company Registration Certificate"
+                        class="img-fluid certificate-img">
+                    <div class="reg-card">
+                        <p class="card-label">officially registered company</p>
+                        <h3 class="card-number">#563789523</h3>
+                        <a href="#" class="card-link">CLICK HERE FOR MORE INFO</a>
+                    </div>
+                </div>
+
+                <!-- Right Column (Text Content) -->
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="plans-main-title">
+                            <div>
+                                <div class="title-part-logo">&infin;</div>
+                                <span class="title-part-investment">ABOUT</span>
+                            </div>
+                            <span class="title-part-plans" data-text="META">META</span>
+                        </h2>
+                        <p>
+                            Nulla sit amet venenatis neque, eu placerat purus. Etiam sit amet hendrerit est. Quisque
+                            sagittis purus vel consequat tincidunt. Vivamus faucibus nibh vel hendrerit tempor. Donec
+                            sed viverra nibh. In mi massa, efficitur id purus eu, euismod ultricies urna. Fusce
+                            vulputate, odio bibendum ornare faucibus, eros nibh varius eros, ut efficitur arcu lacus in
+                            mi. Phasellus vulputate lorem facilisis, finibus ipsum eget, posuere felis.
+                        </p>
+                        <p>
+                            Nulla sit amet venenatis neque, eu placerat purus. Etiam sit amet hendrerit est. Quisque
+                            sagittis purus vel consequat tincidunt. Vivamus faucibus nibh vel hendrerit tempor. Donec
+                            sed viverra nibh. In mi massa, efficitur id purus eu.
+                        </p>
+                        <a href="#" class="btn btn-read-more mt-3">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+    <!-- Your Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
