@@ -163,9 +163,8 @@ body {
 
 /* --- Info Cards --- */
 .info-card {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    min-width: 260px;
     padding: 0.75rem;
     margin-bottom: 1.5rem;
     background: linear-gradient(90deg, #3d2cff, #d43f8d, #fd7e14);
@@ -230,6 +229,10 @@ body {
 
 .info-cards-right {
     right: 5%;
+
+    .info-card {
+        justify-content: flex-end;
+    }
 }
 
 
@@ -390,9 +393,6 @@ section {
         right: 2%;
     }
 
-    .info-card {
-        min-width: 200px;
-    }
 
     .hero-heading h1 {
         font-size: 5rem;
@@ -457,6 +457,40 @@ section {
 
     .logo-icon {
         font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 991px) {
+    .info-cards-left {
+        .info-card-wrapper {
+            &:nth-child(2) {
+                .info-card {
+                    margin-left: 5rem;
+                }
+            }
+
+            &:nth-child(3) {
+                .info-card {
+                    margin-left: 10rem;
+                }
+            }
+        }
+    }
+
+    .info-cards-right {
+        .info-card-wrapper {
+            &:nth-child(2) {
+                .info-card {
+                    margin-right: 5rem;
+                }
+            }
+
+            &:nth-child(3) {
+                .info-card {
+                    margin-right: 10rem;
+                }
+            }
+        }
     }
 }
 
